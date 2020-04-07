@@ -263,7 +263,7 @@ ThostFtdcTraderApi.h(30) : Warning 514: Director base class CThostFtdcTraderSpi 
 选择空项目：
 ![此处输入图片的描述][2]
 
-项目名称填：**_PyCTP*
+项目名称填：**_PyCTP**
 注意前面一定要有这个下划线，不能乱取，要和前面接口文件声明的一样
 ![此处输入图片的描述][3]
 
