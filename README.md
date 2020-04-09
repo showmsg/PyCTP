@@ -31,7 +31,8 @@ thosttraderapi_se.lib
  - 安装Visual Studio，本文使用的版本为：Microsoft Visual Studio Community 2019 16.5.2；其他版本理论上来说也可以
 
 ## 通过Swig得到python接口文件
-在刚刚下载得到的API文件夹内，新建文件PyCTP.i，内容如下：
+~~在刚刚下载得到的API文件夹内，新建文件PyCTP.i，内容如下：~~
+请不要使用下面的代码，乱码的问题不好解决
 ```c++
 %module(directors="1") PyCTP
  
@@ -101,7 +102,12 @@ thosttraderapi_se.lib
  
 %include "ThostFtdcTraderApi.h"
 ```
-如果需要让CTP的GBK字符在返回的时候自动转化为UTF-8，那么使用下面的代码：
+如果不把GBK转为UTF-8，会出现下面这样的乱码问题：
+![此处输入图片的描述][1]
+别看着这个字符串好像只需要解码什么的就可以得到源码，在python下处理这个特殊的字符串还是挺麻烦的，这个和普通的bytes str等的转换不同，所以我们最好使用下面的这版本代码进行封装就可以在C++底层自动把编码转为UTF-8
+![此处输入图片的描述][2]
+
+让CTP的GBK字符在返回的时候自动转化为UTF-8，那么使用下面的代码：
 ```c++
 %module(directors="1") PyCTP
  
@@ -258,19 +264,19 @@ ThostFtdcTraderApi.h(30) : Warning 514: Director base class CThostFtdcTraderSpi 
 
 ## 通过C++得到python可调用的pyd动态库
 使用VS新建一个C++工程：
-![此处输入图片的描述][1]
+![此处输入图片的描述][3]
 
 选择空项目：
-![此处输入图片的描述][2]
+![此处输入图片的描述][4]
 
 项目名称填：**_PyCTP**
 注意前面一定要有这个下划线，不能乱取，要和前面接口文件声明的一样
-![此处输入图片的描述][3]
+![此处输入图片的描述][5]
 
 点击创建，然后把项目配置切换到Releas x64，切换到你要封装的环境上：
-![此处输入图片的描述][4]
+![此处输入图片的描述][6]
 到：
-![此处输入图片的描述][5]
+![此处输入图片的描述][7]
 
 向工程文件夹中添加需要编译的文件，我这边是把刚才SWIG生成的文件夹下的全部文件先复制到工程文件目录下，我的目录是这样的：
 ```
@@ -292,24 +298,24 @@ PyCTP_wrap.h
 后面四个就是SWIG生成的源文件等，其实VS编译不需要全部的文件的，我全部复制只是为了方便。
 
 然后 **右键左侧解决方案-添加-添加-现有项**，选择对应的头文件、源文件、资源文件添加到工程，我添加完毕后长这样：
-![此处输入图片的描述][6]
+![此处输入图片的描述][8]
 然后还需要设置下面的几个参数：
 
 **1）工程建64位dll类型**
-![此处输入图片的描述][7]
+![此处输入图片的描述][9]
 
 **2）运行库选多线程(/MT)**
-![此处输入图片的描述][8]
+![此处输入图片的描述][10]
 
 **3）将python目录下include文件夹的路径添加至C++附加包含目录**
 
 我的设置在：**工程 – 属性 – 配置属性 – c/c++ – 常规 – 附加包含目录**
-![此处输入图片的描述][9]
+![此处输入图片的描述][11]
 
 **4）将python目录下libs下的python37.lib添加至工程附加依赖项中**
 
 我的设置在：工程 – 属性 – 配置属性 – 连接器 – 输入 – 附加依赖项
-![此处输入图片的描述][10]
+![此处输入图片的描述][12]
 
 ## 编译生成dll
 点击菜单上的 **生成 – 生成解决方案F7**
@@ -349,13 +355,16 @@ PyCTP_wrap.h
 
 **声明：仅是个人爱好编译，对此API引起的你的任何损失不负责任。**
 
-  [1]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407155924.png
-  [2]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160049.png
-  [3]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160145.png
-  [4]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160450.png
-  [5]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160548.png
-  [6]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407161145.png
-  [7]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407164447.png
-  [8]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407164558.png
-  [9]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407165819.png
-  [10]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407170031.png
+
+  [1]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200408155104.png
+  [2]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200409090143.png
+  [3]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407155924.png
+  [4]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160049.png
+  [5]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160145.png
+  [6]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160450.png
+  [7]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407160548.png
+  [8]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407161145.png
+  [9]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407164447.png
+  [10]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407164558.png
+  [11]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407165819.png
+  [12]: https://raw.githubusercontent.com/EVA-JianJun/GitPigBed/master/blog_files/img/SWIG_20200407170031.png
