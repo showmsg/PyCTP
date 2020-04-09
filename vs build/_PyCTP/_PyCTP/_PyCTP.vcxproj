@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{3D5CE14C-3FA8-45A3-B80D-F2C81B329FDA}</ProjectGuid>
+    <ProjectGuid>{E5B94C45-64F2-43E5-836D-7EF1152BF5E9}</ProjectGuid>
     <RootNamespace>PyCTP</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

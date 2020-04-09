@@ -156,17 +156,17 @@ const static locale g_loc("zh_CN.GB18030");
         (g_loc).in(state,
             gb2312.data(), gb2312.data() + gb2312.size(), gbEnd,
             wstr.data(), wstr.data() + wstr.size(), wstrEnd);
- 
+
     if (codecvt_base::ok == res)
     {
         wstring_convert<codecvt_utf8<wchar_t>> cutf8;
-        std::string result = cutf8.to_bytes(wstring(wstr.data(), wstrEnd));       
-        resultobj = SWIG_FromCharPtrAndSize(result.c_str(), result.size()); 
+        std::string result = cutf8.to_bytes(wstring(wstr.data(), wstrEnd));
+        resultobj = SWIG_FromCharPtrAndSize(result.c_str(), result.size());
     }
     else
     {
         std::string result;
-        resultobj = SWIG_FromCharPtrAndSize(result.c_str(), result.size()); 
+        resultobj = SWIG_FromCharPtrAndSize(result.c_str(), result.size());
     }
 }
  

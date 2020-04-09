@@ -9051,43 +9051,43 @@ class CThostFtdcMdSpi(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-    def OnFrontConnected(self) -> "void":
+    def OnFrontConnected(self):
         return _PyCTP.CThostFtdcMdSpi_OnFrontConnected(self)
 
-    def OnFrontDisconnected(self, nReason: "int") -> "void":
+    def OnFrontDisconnected(self, nReason):
         return _PyCTP.CThostFtdcMdSpi_OnFrontDisconnected(self, nReason)
 
-    def OnHeartBeatWarning(self, nTimeLapse: "int") -> "void":
+    def OnHeartBeatWarning(self, nTimeLapse):
         return _PyCTP.CThostFtdcMdSpi_OnHeartBeatWarning(self, nTimeLapse)
 
-    def OnRspUserLogin(self, pRspUserLogin: "CThostFtdcRspUserLoginField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserLogin(self, pRspUserLogin, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspUserLogin(self, pRspUserLogin, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUserLogout(self, pUserLogout: "CThostFtdcUserLogoutField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserLogout(self, pUserLogout, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspUserLogout(self, pUserLogout, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryMulticastInstrument(self, pMulticastInstrument: "CThostFtdcMulticastInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryMulticastInstrument(self, pMulticastInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspQryMulticastInstrument(self, pMulticastInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspError(self, pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspError(self, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspError(self, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspSubMarketData(self, pSpecificInstrument: "CThostFtdcSpecificInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspSubMarketData(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspSubMarketData(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUnSubMarketData(self, pSpecificInstrument: "CThostFtdcSpecificInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUnSubMarketData(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspUnSubMarketData(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspSubForQuoteRsp(self, pSpecificInstrument: "CThostFtdcSpecificInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspSubForQuoteRsp(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspSubForQuoteRsp(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUnSubForQuoteRsp(self, pSpecificInstrument: "CThostFtdcSpecificInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUnSubForQuoteRsp(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcMdSpi_OnRspUnSubForQuoteRsp(self, pSpecificInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRtnDepthMarketData(self, pDepthMarketData: "CThostFtdcDepthMarketDataField") -> "void":
+    def OnRtnDepthMarketData(self, pDepthMarketData):
         return _PyCTP.CThostFtdcMdSpi_OnRtnDepthMarketData(self, pDepthMarketData)
 
-    def OnRtnForQuoteRsp(self, pForQuoteRsp: "CThostFtdcForQuoteRspField") -> "void":
+    def OnRtnForQuoteRsp(self, pForQuoteRsp):
         return _PyCTP.CThostFtdcMdSpi_OnRtnForQuoteRsp(self, pForQuoteRsp)
 
     def __init__(self):
@@ -9113,444 +9113,444 @@ class CThostFtdcMdApi(object):
     __repr__ = _swig_repr
 
     @staticmethod
-    def CreateFtdcMdApi(*args) -> "CThostFtdcMdApi *":
+    def CreateFtdcMdApi(*args):
         return _PyCTP.CThostFtdcMdApi_CreateFtdcMdApi(*args)
 
     @staticmethod
-    def GetApiVersion() -> "char const *":
+    def GetApiVersion():
         return _PyCTP.CThostFtdcMdApi_GetApiVersion()
 
-    def Release(self) -> "void":
+    def Release(self):
         return _PyCTP.CThostFtdcMdApi_Release(self)
 
-    def Init(self) -> "void":
+    def Init(self):
         return _PyCTP.CThostFtdcMdApi_Init(self)
 
-    def Join(self) -> "int":
+    def Join(self):
         return _PyCTP.CThostFtdcMdApi_Join(self)
 
-    def GetTradingDay(self) -> "char const *":
+    def GetTradingDay(self):
         return _PyCTP.CThostFtdcMdApi_GetTradingDay(self)
 
-    def RegisterFront(self, pszFrontAddress: "char *") -> "void":
+    def RegisterFront(self, pszFrontAddress):
         return _PyCTP.CThostFtdcMdApi_RegisterFront(self, pszFrontAddress)
 
-    def RegisterNameServer(self, pszNsAddress: "char *") -> "void":
+    def RegisterNameServer(self, pszNsAddress):
         return _PyCTP.CThostFtdcMdApi_RegisterNameServer(self, pszNsAddress)
 
-    def RegisterFensUserInfo(self, pFensUserInfo: "CThostFtdcFensUserInfoField") -> "void":
+    def RegisterFensUserInfo(self, pFensUserInfo):
         return _PyCTP.CThostFtdcMdApi_RegisterFensUserInfo(self, pFensUserInfo)
 
-    def RegisterSpi(self, pSpi: "CThostFtdcMdSpi") -> "void":
+    def RegisterSpi(self, pSpi):
         return _PyCTP.CThostFtdcMdApi_RegisterSpi(self, pSpi)
 
-    def SubscribeMarketData(self, ppInstrumentID: "char *[]", nCount: "int") -> "int":
+    def SubscribeMarketData(self, ppInstrumentID, nCount):
         return _PyCTP.CThostFtdcMdApi_SubscribeMarketData(self, ppInstrumentID, nCount)
 
-    def UnSubscribeMarketData(self, ppInstrumentID: "char *[]", nCount: "int") -> "int":
+    def UnSubscribeMarketData(self, ppInstrumentID, nCount):
         return _PyCTP.CThostFtdcMdApi_UnSubscribeMarketData(self, ppInstrumentID, nCount)
 
-    def SubscribeForQuoteRsp(self, ppInstrumentID: "char *[]", nCount: "int") -> "int":
+    def SubscribeForQuoteRsp(self, ppInstrumentID, nCount):
         return _PyCTP.CThostFtdcMdApi_SubscribeForQuoteRsp(self, ppInstrumentID, nCount)
 
-    def UnSubscribeForQuoteRsp(self, ppInstrumentID: "char *[]", nCount: "int") -> "int":
+    def UnSubscribeForQuoteRsp(self, ppInstrumentID, nCount):
         return _PyCTP.CThostFtdcMdApi_UnSubscribeForQuoteRsp(self, ppInstrumentID, nCount)
 
-    def ReqUserLogin(self, pReqUserLoginField: "CThostFtdcReqUserLoginField", nRequestID: "int") -> "int":
+    def ReqUserLogin(self, pReqUserLoginField, nRequestID):
         return _PyCTP.CThostFtdcMdApi_ReqUserLogin(self, pReqUserLoginField, nRequestID)
 
-    def ReqUserLogout(self, pUserLogout: "CThostFtdcUserLogoutField", nRequestID: "int") -> "int":
+    def ReqUserLogout(self, pUserLogout, nRequestID):
         return _PyCTP.CThostFtdcMdApi_ReqUserLogout(self, pUserLogout, nRequestID)
 
-    def ReqQryMulticastInstrument(self, pQryMulticastInstrument: "CThostFtdcQryMulticastInstrumentField", nRequestID: "int") -> "int":
+    def ReqQryMulticastInstrument(self, pQryMulticastInstrument, nRequestID):
         return _PyCTP.CThostFtdcMdApi_ReqQryMulticastInstrument(self, pQryMulticastInstrument, nRequestID)
 
 # Register CThostFtdcMdApi in _PyCTP:
 _PyCTP.CThostFtdcMdApi_swigregister(CThostFtdcMdApi)
 
-def CThostFtdcMdApi_CreateFtdcMdApi(*args) -> "CThostFtdcMdApi *":
+def CThostFtdcMdApi_CreateFtdcMdApi(*args):
     return _PyCTP.CThostFtdcMdApi_CreateFtdcMdApi(*args)
 
-def CThostFtdcMdApi_GetApiVersion() -> "char const *":
+def CThostFtdcMdApi_GetApiVersion():
     return _PyCTP.CThostFtdcMdApi_GetApiVersion()
 
 class CThostFtdcTraderSpi(object):
     thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
     __repr__ = _swig_repr
 
-    def OnFrontConnected(self) -> "void":
+    def OnFrontConnected(self):
         return _PyCTP.CThostFtdcTraderSpi_OnFrontConnected(self)
 
-    def OnFrontDisconnected(self, nReason: "int") -> "void":
+    def OnFrontDisconnected(self, nReason):
         return _PyCTP.CThostFtdcTraderSpi_OnFrontDisconnected(self, nReason)
 
-    def OnHeartBeatWarning(self, nTimeLapse: "int") -> "void":
+    def OnHeartBeatWarning(self, nTimeLapse):
         return _PyCTP.CThostFtdcTraderSpi_OnHeartBeatWarning(self, nTimeLapse)
 
-    def OnRspAuthenticate(self, pRspAuthenticateField: "CThostFtdcRspAuthenticateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspAuthenticate(self, pRspAuthenticateField, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspAuthenticate(self, pRspAuthenticateField, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUserLogin(self, pRspUserLogin: "CThostFtdcRspUserLoginField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserLogin(self, pRspUserLogin, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspUserLogin(self, pRspUserLogin, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUserLogout(self, pUserLogout: "CThostFtdcUserLogoutField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserLogout(self, pUserLogout, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspUserLogout(self, pUserLogout, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUserPasswordUpdate(self, pUserPasswordUpdate: "CThostFtdcUserPasswordUpdateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserPasswordUpdate(self, pUserPasswordUpdate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspUserPasswordUpdate(self, pUserPasswordUpdate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate: "CThostFtdcTradingAccountPasswordUpdateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspUserAuthMethod(self, pRspUserAuthMethod: "CThostFtdcRspUserAuthMethodField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspUserAuthMethod(self, pRspUserAuthMethod, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspUserAuthMethod(self, pRspUserAuthMethod, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspGenUserCaptcha(self, pRspGenUserCaptcha: "CThostFtdcRspGenUserCaptchaField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspGenUserCaptcha(self, pRspGenUserCaptcha, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspGenUserCaptcha(self, pRspGenUserCaptcha, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspGenUserText(self, pRspGenUserText: "CThostFtdcRspGenUserTextField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspGenUserText(self, pRspGenUserText, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspGenUserText(self, pRspGenUserText, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspOrderInsert(self, pInputOrder: "CThostFtdcInputOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspOrderInsert(self, pInputOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspOrderInsert(self, pInputOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspParkedOrderInsert(self, pParkedOrder: "CThostFtdcParkedOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspParkedOrderInsert(self, pParkedOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspParkedOrderInsert(self, pParkedOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspParkedOrderAction(self, pParkedOrderAction: "CThostFtdcParkedOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspParkedOrderAction(self, pParkedOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspParkedOrderAction(self, pParkedOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspOrderAction(self, pInputOrderAction: "CThostFtdcInputOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspOrderAction(self, pInputOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspOrderAction(self, pInputOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQueryMaxOrderVolume(self, pQueryMaxOrderVolume: "CThostFtdcQueryMaxOrderVolumeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQueryMaxOrderVolume(self, pQueryMaxOrderVolume, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQueryMaxOrderVolume(self, pQueryMaxOrderVolume, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspSettlementInfoConfirm(self, pSettlementInfoConfirm: "CThostFtdcSettlementInfoConfirmField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspSettlementInfoConfirm(self, pSettlementInfoConfirm, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspSettlementInfoConfirm(self, pSettlementInfoConfirm, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspRemoveParkedOrder(self, pRemoveParkedOrder: "CThostFtdcRemoveParkedOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspRemoveParkedOrder(self, pRemoveParkedOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspRemoveParkedOrder(self, pRemoveParkedOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspRemoveParkedOrderAction(self, pRemoveParkedOrderAction: "CThostFtdcRemoveParkedOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspRemoveParkedOrderAction(self, pRemoveParkedOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspRemoveParkedOrderAction(self, pRemoveParkedOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspExecOrderInsert(self, pInputExecOrder: "CThostFtdcInputExecOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspExecOrderInsert(self, pInputExecOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspExecOrderInsert(self, pInputExecOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspExecOrderAction(self, pInputExecOrderAction: "CThostFtdcInputExecOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspExecOrderAction(self, pInputExecOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspExecOrderAction(self, pInputExecOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspForQuoteInsert(self, pInputForQuote: "CThostFtdcInputForQuoteField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspForQuoteInsert(self, pInputForQuote, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspForQuoteInsert(self, pInputForQuote, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQuoteInsert(self, pInputQuote: "CThostFtdcInputQuoteField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQuoteInsert(self, pInputQuote, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQuoteInsert(self, pInputQuote, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQuoteAction(self, pInputQuoteAction: "CThostFtdcInputQuoteActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQuoteAction(self, pInputQuoteAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQuoteAction(self, pInputQuoteAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspBatchOrderAction(self, pInputBatchOrderAction: "CThostFtdcInputBatchOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspBatchOrderAction(self, pInputBatchOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspBatchOrderAction(self, pInputBatchOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspOptionSelfCloseInsert(self, pInputOptionSelfClose: "CThostFtdcInputOptionSelfCloseField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspOptionSelfCloseInsert(self, pInputOptionSelfClose, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspOptionSelfCloseInsert(self, pInputOptionSelfClose, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspOptionSelfCloseAction(self, pInputOptionSelfCloseAction: "CThostFtdcInputOptionSelfCloseActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspOptionSelfCloseAction(self, pInputOptionSelfCloseAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspOptionSelfCloseAction(self, pInputOptionSelfCloseAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspCombActionInsert(self, pInputCombAction: "CThostFtdcInputCombActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspCombActionInsert(self, pInputCombAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspCombActionInsert(self, pInputCombAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryOrder(self, pOrder: "CThostFtdcOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryOrder(self, pOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryOrder(self, pOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTrade(self, pTrade: "CThostFtdcTradeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTrade(self, pTrade, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTrade(self, pTrade, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestorPosition(self, pInvestorPosition: "CThostFtdcInvestorPositionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestorPosition(self, pInvestorPosition, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestorPosition(self, pInvestorPosition, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTradingAccount(self, pTradingAccount: "CThostFtdcTradingAccountField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTradingAccount(self, pTradingAccount, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTradingAccount(self, pTradingAccount, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestor(self, pInvestor: "CThostFtdcInvestorField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestor(self, pInvestor, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestor(self, pInvestor, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTradingCode(self, pTradingCode: "CThostFtdcTradingCodeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTradingCode(self, pTradingCode, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTradingCode(self, pTradingCode, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInstrumentMarginRate(self, pInstrumentMarginRate: "CThostFtdcInstrumentMarginRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInstrumentMarginRate(self, pInstrumentMarginRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInstrumentMarginRate(self, pInstrumentMarginRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInstrumentCommissionRate(self, pInstrumentCommissionRate: "CThostFtdcInstrumentCommissionRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInstrumentCommissionRate(self, pInstrumentCommissionRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInstrumentCommissionRate(self, pInstrumentCommissionRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryExchange(self, pExchange: "CThostFtdcExchangeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryExchange(self, pExchange, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryExchange(self, pExchange, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryProduct(self, pProduct: "CThostFtdcProductField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryProduct(self, pProduct, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryProduct(self, pProduct, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInstrument(self, pInstrument: "CThostFtdcInstrumentField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInstrument(self, pInstrument, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInstrument(self, pInstrument, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryDepthMarketData(self, pDepthMarketData: "CThostFtdcDepthMarketDataField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryDepthMarketData(self, pDepthMarketData, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryDepthMarketData(self, pDepthMarketData, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySettlementInfo(self, pSettlementInfo: "CThostFtdcSettlementInfoField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySettlementInfo(self, pSettlementInfo, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySettlementInfo(self, pSettlementInfo, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTransferBank(self, pTransferBank: "CThostFtdcTransferBankField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTransferBank(self, pTransferBank, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTransferBank(self, pTransferBank, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestorPositionDetail(self, pInvestorPositionDetail: "CThostFtdcInvestorPositionDetailField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestorPositionDetail(self, pInvestorPositionDetail, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestorPositionDetail(self, pInvestorPositionDetail, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryNotice(self, pNotice: "CThostFtdcNoticeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryNotice(self, pNotice, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryNotice(self, pNotice, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySettlementInfoConfirm(self, pSettlementInfoConfirm: "CThostFtdcSettlementInfoConfirmField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySettlementInfoConfirm(self, pSettlementInfoConfirm, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySettlementInfoConfirm(self, pSettlementInfoConfirm, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestorPositionCombineDetail(self, pInvestorPositionCombineDetail: "CThostFtdcInvestorPositionCombineDetailField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestorPositionCombineDetail(self, pInvestorPositionCombineDetail, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestorPositionCombineDetail(self, pInvestorPositionCombineDetail, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryCFMMCTradingAccountKey(self, pCFMMCTradingAccountKey: "CThostFtdcCFMMCTradingAccountKeyField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryCFMMCTradingAccountKey(self, pCFMMCTradingAccountKey, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryCFMMCTradingAccountKey(self, pCFMMCTradingAccountKey, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryEWarrantOffset(self, pEWarrantOffset: "CThostFtdcEWarrantOffsetField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryEWarrantOffset(self, pEWarrantOffset, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryEWarrantOffset(self, pEWarrantOffset, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestorProductGroupMargin(self, pInvestorProductGroupMargin: "CThostFtdcInvestorProductGroupMarginField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestorProductGroupMargin(self, pInvestorProductGroupMargin, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestorProductGroupMargin(self, pInvestorProductGroupMargin, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryExchangeMarginRate(self, pExchangeMarginRate: "CThostFtdcExchangeMarginRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryExchangeMarginRate(self, pExchangeMarginRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryExchangeMarginRate(self, pExchangeMarginRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryExchangeMarginRateAdjust(self, pExchangeMarginRateAdjust: "CThostFtdcExchangeMarginRateAdjustField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryExchangeMarginRateAdjust(self, pExchangeMarginRateAdjust, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryExchangeMarginRateAdjust(self, pExchangeMarginRateAdjust, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryExchangeRate(self, pExchangeRate: "CThostFtdcExchangeRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryExchangeRate(self, pExchangeRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryExchangeRate(self, pExchangeRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySecAgentACIDMap(self, pSecAgentACIDMap: "CThostFtdcSecAgentACIDMapField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySecAgentACIDMap(self, pSecAgentACIDMap, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySecAgentACIDMap(self, pSecAgentACIDMap, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryProductExchRate(self, pProductExchRate: "CThostFtdcProductExchRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryProductExchRate(self, pProductExchRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryProductExchRate(self, pProductExchRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryProductGroup(self, pProductGroup: "CThostFtdcProductGroupField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryProductGroup(self, pProductGroup, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryProductGroup(self, pProductGroup, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryMMInstrumentCommissionRate(self, pMMInstrumentCommissionRate: "CThostFtdcMMInstrumentCommissionRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryMMInstrumentCommissionRate(self, pMMInstrumentCommissionRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryMMInstrumentCommissionRate(self, pMMInstrumentCommissionRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryMMOptionInstrCommRate(self, pMMOptionInstrCommRate: "CThostFtdcMMOptionInstrCommRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryMMOptionInstrCommRate(self, pMMOptionInstrCommRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryMMOptionInstrCommRate(self, pMMOptionInstrCommRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInstrumentOrderCommRate(self, pInstrumentOrderCommRate: "CThostFtdcInstrumentOrderCommRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInstrumentOrderCommRate(self, pInstrumentOrderCommRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInstrumentOrderCommRate(self, pInstrumentOrderCommRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySecAgentTradingAccount(self, pTradingAccount: "CThostFtdcTradingAccountField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySecAgentTradingAccount(self, pTradingAccount, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySecAgentTradingAccount(self, pTradingAccount, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySecAgentCheckMode(self, pSecAgentCheckMode: "CThostFtdcSecAgentCheckModeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySecAgentCheckMode(self, pSecAgentCheckMode, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySecAgentCheckMode(self, pSecAgentCheckMode, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQrySecAgentTradeInfo(self, pSecAgentTradeInfo: "CThostFtdcSecAgentTradeInfoField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQrySecAgentTradeInfo(self, pSecAgentTradeInfo, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQrySecAgentTradeInfo(self, pSecAgentTradeInfo, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryOptionInstrTradeCost(self, pOptionInstrTradeCost: "CThostFtdcOptionInstrTradeCostField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryOptionInstrTradeCost(self, pOptionInstrTradeCost, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryOptionInstrTradeCost(self, pOptionInstrTradeCost, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryOptionInstrCommRate(self, pOptionInstrCommRate: "CThostFtdcOptionInstrCommRateField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryOptionInstrCommRate(self, pOptionInstrCommRate, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryOptionInstrCommRate(self, pOptionInstrCommRate, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryExecOrder(self, pExecOrder: "CThostFtdcExecOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryExecOrder(self, pExecOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryExecOrder(self, pExecOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryForQuote(self, pForQuote: "CThostFtdcForQuoteField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryForQuote(self, pForQuote, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryForQuote(self, pForQuote, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryQuote(self, pQuote: "CThostFtdcQuoteField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryQuote(self, pQuote, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryQuote(self, pQuote, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryOptionSelfClose(self, pOptionSelfClose: "CThostFtdcOptionSelfCloseField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryOptionSelfClose(self, pOptionSelfClose, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryOptionSelfClose(self, pOptionSelfClose, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryInvestUnit(self, pInvestUnit: "CThostFtdcInvestUnitField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryInvestUnit(self, pInvestUnit, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryInvestUnit(self, pInvestUnit, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryCombInstrumentGuard(self, pCombInstrumentGuard: "CThostFtdcCombInstrumentGuardField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryCombInstrumentGuard(self, pCombInstrumentGuard, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryCombInstrumentGuard(self, pCombInstrumentGuard, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryCombAction(self, pCombAction: "CThostFtdcCombActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryCombAction(self, pCombAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryCombAction(self, pCombAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTransferSerial(self, pTransferSerial: "CThostFtdcTransferSerialField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTransferSerial(self, pTransferSerial, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTransferSerial(self, pTransferSerial, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryAccountregister(self, pAccountregister: "CThostFtdcAccountregisterField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryAccountregister(self, pAccountregister, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryAccountregister(self, pAccountregister, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspError(self, pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspError(self, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspError(self, pRspInfo, nRequestID, bIsLast)
 
-    def OnRtnOrder(self, pOrder: "CThostFtdcOrderField") -> "void":
+    def OnRtnOrder(self, pOrder):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnOrder(self, pOrder)
 
-    def OnRtnTrade(self, pTrade: "CThostFtdcTradeField") -> "void":
+    def OnRtnTrade(self, pTrade):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnTrade(self, pTrade)
 
-    def OnErrRtnOrderInsert(self, pInputOrder: "CThostFtdcInputOrderField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnOrderInsert(self, pInputOrder, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnOrderInsert(self, pInputOrder, pRspInfo)
 
-    def OnErrRtnOrderAction(self, pOrderAction: "CThostFtdcOrderActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnOrderAction(self, pOrderAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnOrderAction(self, pOrderAction, pRspInfo)
 
-    def OnRtnInstrumentStatus(self, pInstrumentStatus: "CThostFtdcInstrumentStatusField") -> "void":
+    def OnRtnInstrumentStatus(self, pInstrumentStatus):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnInstrumentStatus(self, pInstrumentStatus)
 
-    def OnRtnBulletin(self, pBulletin: "CThostFtdcBulletinField") -> "void":
+    def OnRtnBulletin(self, pBulletin):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnBulletin(self, pBulletin)
 
-    def OnRtnTradingNotice(self, pTradingNoticeInfo: "CThostFtdcTradingNoticeInfoField") -> "void":
+    def OnRtnTradingNotice(self, pTradingNoticeInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnTradingNotice(self, pTradingNoticeInfo)
 
-    def OnRtnErrorConditionalOrder(self, pErrorConditionalOrder: "CThostFtdcErrorConditionalOrderField") -> "void":
+    def OnRtnErrorConditionalOrder(self, pErrorConditionalOrder):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnErrorConditionalOrder(self, pErrorConditionalOrder)
 
-    def OnRtnExecOrder(self, pExecOrder: "CThostFtdcExecOrderField") -> "void":
+    def OnRtnExecOrder(self, pExecOrder):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnExecOrder(self, pExecOrder)
 
-    def OnErrRtnExecOrderInsert(self, pInputExecOrder: "CThostFtdcInputExecOrderField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnExecOrderInsert(self, pInputExecOrder, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnExecOrderInsert(self, pInputExecOrder, pRspInfo)
 
-    def OnErrRtnExecOrderAction(self, pExecOrderAction: "CThostFtdcExecOrderActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnExecOrderAction(self, pExecOrderAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnExecOrderAction(self, pExecOrderAction, pRspInfo)
 
-    def OnErrRtnForQuoteInsert(self, pInputForQuote: "CThostFtdcInputForQuoteField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnForQuoteInsert(self, pInputForQuote, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnForQuoteInsert(self, pInputForQuote, pRspInfo)
 
-    def OnRtnQuote(self, pQuote: "CThostFtdcQuoteField") -> "void":
+    def OnRtnQuote(self, pQuote):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnQuote(self, pQuote)
 
-    def OnErrRtnQuoteInsert(self, pInputQuote: "CThostFtdcInputQuoteField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnQuoteInsert(self, pInputQuote, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnQuoteInsert(self, pInputQuote, pRspInfo)
 
-    def OnErrRtnQuoteAction(self, pQuoteAction: "CThostFtdcQuoteActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnQuoteAction(self, pQuoteAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnQuoteAction(self, pQuoteAction, pRspInfo)
 
-    def OnRtnForQuoteRsp(self, pForQuoteRsp: "CThostFtdcForQuoteRspField") -> "void":
+    def OnRtnForQuoteRsp(self, pForQuoteRsp):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnForQuoteRsp(self, pForQuoteRsp)
 
-    def OnRtnCFMMCTradingAccountToken(self, pCFMMCTradingAccountToken: "CThostFtdcCFMMCTradingAccountTokenField") -> "void":
+    def OnRtnCFMMCTradingAccountToken(self, pCFMMCTradingAccountToken):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnCFMMCTradingAccountToken(self, pCFMMCTradingAccountToken)
 
-    def OnErrRtnBatchOrderAction(self, pBatchOrderAction: "CThostFtdcBatchOrderActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnBatchOrderAction(self, pBatchOrderAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnBatchOrderAction(self, pBatchOrderAction, pRspInfo)
 
-    def OnRtnOptionSelfClose(self, pOptionSelfClose: "CThostFtdcOptionSelfCloseField") -> "void":
+    def OnRtnOptionSelfClose(self, pOptionSelfClose):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnOptionSelfClose(self, pOptionSelfClose)
 
-    def OnErrRtnOptionSelfCloseInsert(self, pInputOptionSelfClose: "CThostFtdcInputOptionSelfCloseField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnOptionSelfCloseInsert(self, pInputOptionSelfClose, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnOptionSelfCloseInsert(self, pInputOptionSelfClose, pRspInfo)
 
-    def OnErrRtnOptionSelfCloseAction(self, pOptionSelfCloseAction: "CThostFtdcOptionSelfCloseActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnOptionSelfCloseAction(self, pOptionSelfCloseAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnOptionSelfCloseAction(self, pOptionSelfCloseAction, pRspInfo)
 
-    def OnRtnCombAction(self, pCombAction: "CThostFtdcCombActionField") -> "void":
+    def OnRtnCombAction(self, pCombAction):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnCombAction(self, pCombAction)
 
-    def OnErrRtnCombActionInsert(self, pInputCombAction: "CThostFtdcInputCombActionField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnCombActionInsert(self, pInputCombAction, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnCombActionInsert(self, pInputCombAction, pRspInfo)
 
-    def OnRspQryContractBank(self, pContractBank: "CThostFtdcContractBankField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryContractBank(self, pContractBank, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryContractBank(self, pContractBank, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryParkedOrder(self, pParkedOrder: "CThostFtdcParkedOrderField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryParkedOrder(self, pParkedOrder, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryParkedOrder(self, pParkedOrder, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryParkedOrderAction(self, pParkedOrderAction: "CThostFtdcParkedOrderActionField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryParkedOrderAction(self, pParkedOrderAction, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryParkedOrderAction(self, pParkedOrderAction, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryTradingNotice(self, pTradingNotice: "CThostFtdcTradingNoticeField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryTradingNotice(self, pTradingNotice, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryTradingNotice(self, pTradingNotice, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryBrokerTradingParams(self, pBrokerTradingParams: "CThostFtdcBrokerTradingParamsField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryBrokerTradingParams(self, pBrokerTradingParams, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryBrokerTradingParams(self, pBrokerTradingParams, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQryBrokerTradingAlgos(self, pBrokerTradingAlgos: "CThostFtdcBrokerTradingAlgosField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQryBrokerTradingAlgos(self, pBrokerTradingAlgos, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQryBrokerTradingAlgos(self, pBrokerTradingAlgos, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken: "CThostFtdcQueryCFMMCTradingAccountTokenField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken, pRspInfo, nRequestID, bIsLast)
 
-    def OnRtnFromBankToFutureByBank(self, pRspTransfer: "CThostFtdcRspTransferField") -> "void":
+    def OnRtnFromBankToFutureByBank(self, pRspTransfer):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnFromBankToFutureByBank(self, pRspTransfer)
 
-    def OnRtnFromFutureToBankByBank(self, pRspTransfer: "CThostFtdcRspTransferField") -> "void":
+    def OnRtnFromFutureToBankByBank(self, pRspTransfer):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnFromFutureToBankByBank(self, pRspTransfer)
 
-    def OnRtnRepealFromBankToFutureByBank(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromBankToFutureByBank(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromBankToFutureByBank(self, pRspRepeal)
 
-    def OnRtnRepealFromFutureToBankByBank(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromFutureToBankByBank(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromFutureToBankByBank(self, pRspRepeal)
 
-    def OnRtnFromBankToFutureByFuture(self, pRspTransfer: "CThostFtdcRspTransferField") -> "void":
+    def OnRtnFromBankToFutureByFuture(self, pRspTransfer):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnFromBankToFutureByFuture(self, pRspTransfer)
 
-    def OnRtnFromFutureToBankByFuture(self, pRspTransfer: "CThostFtdcRspTransferField") -> "void":
+    def OnRtnFromFutureToBankByFuture(self, pRspTransfer):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnFromFutureToBankByFuture(self, pRspTransfer)
 
-    def OnRtnRepealFromBankToFutureByFutureManual(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromBankToFutureByFutureManual(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromBankToFutureByFutureManual(self, pRspRepeal)
 
-    def OnRtnRepealFromFutureToBankByFutureManual(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromFutureToBankByFutureManual(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromFutureToBankByFutureManual(self, pRspRepeal)
 
-    def OnRtnQueryBankBalanceByFuture(self, pNotifyQueryAccount: "CThostFtdcNotifyQueryAccountField") -> "void":
+    def OnRtnQueryBankBalanceByFuture(self, pNotifyQueryAccount):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnQueryBankBalanceByFuture(self, pNotifyQueryAccount)
 
-    def OnErrRtnBankToFutureByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnBankToFutureByFuture(self, pReqTransfer, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnBankToFutureByFuture(self, pReqTransfer, pRspInfo)
 
-    def OnErrRtnFutureToBankByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnFutureToBankByFuture(self, pReqTransfer, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnFutureToBankByFuture(self, pReqTransfer, pRspInfo)
 
-    def OnErrRtnRepealBankToFutureByFutureManual(self, pReqRepeal: "CThostFtdcReqRepealField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnRepealBankToFutureByFutureManual(self, pReqRepeal, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnRepealBankToFutureByFutureManual(self, pReqRepeal, pRspInfo)
 
-    def OnErrRtnRepealFutureToBankByFutureManual(self, pReqRepeal: "CThostFtdcReqRepealField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnRepealFutureToBankByFutureManual(self, pReqRepeal, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnRepealFutureToBankByFutureManual(self, pReqRepeal, pRspInfo)
 
-    def OnErrRtnQueryBankBalanceByFuture(self, pReqQueryAccount: "CThostFtdcReqQueryAccountField", pRspInfo: "CThostFtdcRspInfoField") -> "void":
+    def OnErrRtnQueryBankBalanceByFuture(self, pReqQueryAccount, pRspInfo):
         return _PyCTP.CThostFtdcTraderSpi_OnErrRtnQueryBankBalanceByFuture(self, pReqQueryAccount, pRspInfo)
 
-    def OnRtnRepealFromBankToFutureByFuture(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromBankToFutureByFuture(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromBankToFutureByFuture(self, pRspRepeal)
 
-    def OnRtnRepealFromFutureToBankByFuture(self, pRspRepeal: "CThostFtdcRspRepealField") -> "void":
+    def OnRtnRepealFromFutureToBankByFuture(self, pRspRepeal):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnRepealFromFutureToBankByFuture(self, pRspRepeal)
 
-    def OnRspFromBankToFutureByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspFromBankToFutureByFuture(self, pReqTransfer, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspFromBankToFutureByFuture(self, pReqTransfer, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspFromFutureToBankByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspFromFutureToBankByFuture(self, pReqTransfer, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspFromFutureToBankByFuture(self, pReqTransfer, pRspInfo, nRequestID, bIsLast)
 
-    def OnRspQueryBankAccountMoneyByFuture(self, pReqQueryAccount: "CThostFtdcReqQueryAccountField", pRspInfo: "CThostFtdcRspInfoField", nRequestID: "int", bIsLast: "bool") -> "void":
+    def OnRspQueryBankAccountMoneyByFuture(self, pReqQueryAccount, pRspInfo, nRequestID, bIsLast):
         return _PyCTP.CThostFtdcTraderSpi_OnRspQueryBankAccountMoneyByFuture(self, pReqQueryAccount, pRspInfo, nRequestID, bIsLast)
 
-    def OnRtnOpenAccountByBank(self, pOpenAccount: "CThostFtdcOpenAccountField") -> "void":
+    def OnRtnOpenAccountByBank(self, pOpenAccount):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnOpenAccountByBank(self, pOpenAccount)
 
-    def OnRtnCancelAccountByBank(self, pCancelAccount: "CThostFtdcCancelAccountField") -> "void":
+    def OnRtnCancelAccountByBank(self, pCancelAccount):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnCancelAccountByBank(self, pCancelAccount)
 
-    def OnRtnChangeAccountByBank(self, pChangeAccount: "CThostFtdcChangeAccountField") -> "void":
+    def OnRtnChangeAccountByBank(self, pChangeAccount):
         return _PyCTP.CThostFtdcTraderSpi_OnRtnChangeAccountByBank(self, pChangeAccount)
 
     def __init__(self):
@@ -9576,302 +9576,302 @@ class CThostFtdcTraderApi(object):
     __repr__ = _swig_repr
 
     @staticmethod
-    def CreateFtdcTraderApi(*args) -> "CThostFtdcTraderApi *":
+    def CreateFtdcTraderApi(*args):
         return _PyCTP.CThostFtdcTraderApi_CreateFtdcTraderApi(*args)
 
     @staticmethod
-    def GetApiVersion() -> "char const *":
+    def GetApiVersion():
         return _PyCTP.CThostFtdcTraderApi_GetApiVersion()
 
-    def Release(self) -> "void":
+    def Release(self):
         return _PyCTP.CThostFtdcTraderApi_Release(self)
 
-    def Init(self) -> "void":
+    def Init(self):
         return _PyCTP.CThostFtdcTraderApi_Init(self)
 
-    def Join(self) -> "int":
+    def Join(self):
         return _PyCTP.CThostFtdcTraderApi_Join(self)
 
-    def GetTradingDay(self) -> "char const *":
+    def GetTradingDay(self):
         return _PyCTP.CThostFtdcTraderApi_GetTradingDay(self)
 
-    def RegisterFront(self, pszFrontAddress: "char *") -> "void":
+    def RegisterFront(self, pszFrontAddress):
         return _PyCTP.CThostFtdcTraderApi_RegisterFront(self, pszFrontAddress)
 
-    def RegisterNameServer(self, pszNsAddress: "char *") -> "void":
+    def RegisterNameServer(self, pszNsAddress):
         return _PyCTP.CThostFtdcTraderApi_RegisterNameServer(self, pszNsAddress)
 
-    def RegisterFensUserInfo(self, pFensUserInfo: "CThostFtdcFensUserInfoField") -> "void":
+    def RegisterFensUserInfo(self, pFensUserInfo):
         return _PyCTP.CThostFtdcTraderApi_RegisterFensUserInfo(self, pFensUserInfo)
 
-    def RegisterSpi(self, pSpi: "CThostFtdcTraderSpi") -> "void":
+    def RegisterSpi(self, pSpi):
         return _PyCTP.CThostFtdcTraderApi_RegisterSpi(self, pSpi)
 
-    def SubscribePrivateTopic(self, nResumeType: "THOST_TE_RESUME_TYPE") -> "void":
+    def SubscribePrivateTopic(self, nResumeType):
         return _PyCTP.CThostFtdcTraderApi_SubscribePrivateTopic(self, nResumeType)
 
-    def SubscribePublicTopic(self, nResumeType: "THOST_TE_RESUME_TYPE") -> "void":
+    def SubscribePublicTopic(self, nResumeType):
         return _PyCTP.CThostFtdcTraderApi_SubscribePublicTopic(self, nResumeType)
 
-    def ReqAuthenticate(self, pReqAuthenticateField: "CThostFtdcReqAuthenticateField", nRequestID: "int") -> "int":
+    def ReqAuthenticate(self, pReqAuthenticateField, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqAuthenticate(self, pReqAuthenticateField, nRequestID)
 
-    def RegisterUserSystemInfo(self, pUserSystemInfo: "CThostFtdcUserSystemInfoField") -> "int":
+    def RegisterUserSystemInfo(self, pUserSystemInfo):
         return _PyCTP.CThostFtdcTraderApi_RegisterUserSystemInfo(self, pUserSystemInfo)
 
-    def SubmitUserSystemInfo(self, pUserSystemInfo: "CThostFtdcUserSystemInfoField") -> "int":
+    def SubmitUserSystemInfo(self, pUserSystemInfo):
         return _PyCTP.CThostFtdcTraderApi_SubmitUserSystemInfo(self, pUserSystemInfo)
 
-    def ReqUserLogin(self, pReqUserLoginField: "CThostFtdcReqUserLoginField", nRequestID: "int") -> "int":
+    def ReqUserLogin(self, pReqUserLoginField, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserLogin(self, pReqUserLoginField, nRequestID)
 
-    def ReqUserLogout(self, pUserLogout: "CThostFtdcUserLogoutField", nRequestID: "int") -> "int":
+    def ReqUserLogout(self, pUserLogout, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserLogout(self, pUserLogout, nRequestID)
 
-    def ReqUserPasswordUpdate(self, pUserPasswordUpdate: "CThostFtdcUserPasswordUpdateField", nRequestID: "int") -> "int":
+    def ReqUserPasswordUpdate(self, pUserPasswordUpdate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserPasswordUpdate(self, pUserPasswordUpdate, nRequestID)
 
-    def ReqTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate: "CThostFtdcTradingAccountPasswordUpdateField", nRequestID: "int") -> "int":
+    def ReqTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqTradingAccountPasswordUpdate(self, pTradingAccountPasswordUpdate, nRequestID)
 
-    def ReqUserAuthMethod(self, pReqUserAuthMethod: "CThostFtdcReqUserAuthMethodField", nRequestID: "int") -> "int":
+    def ReqUserAuthMethod(self, pReqUserAuthMethod, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserAuthMethod(self, pReqUserAuthMethod, nRequestID)
 
-    def ReqGenUserCaptcha(self, pReqGenUserCaptcha: "CThostFtdcReqGenUserCaptchaField", nRequestID: "int") -> "int":
+    def ReqGenUserCaptcha(self, pReqGenUserCaptcha, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqGenUserCaptcha(self, pReqGenUserCaptcha, nRequestID)
 
-    def ReqGenUserText(self, pReqGenUserText: "CThostFtdcReqGenUserTextField", nRequestID: "int") -> "int":
+    def ReqGenUserText(self, pReqGenUserText, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqGenUserText(self, pReqGenUserText, nRequestID)
 
-    def ReqUserLoginWithCaptcha(self, pReqUserLoginWithCaptcha: "CThostFtdcReqUserLoginWithCaptchaField", nRequestID: "int") -> "int":
+    def ReqUserLoginWithCaptcha(self, pReqUserLoginWithCaptcha, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserLoginWithCaptcha(self, pReqUserLoginWithCaptcha, nRequestID)
 
-    def ReqUserLoginWithText(self, pReqUserLoginWithText: "CThostFtdcReqUserLoginWithTextField", nRequestID: "int") -> "int":
+    def ReqUserLoginWithText(self, pReqUserLoginWithText, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserLoginWithText(self, pReqUserLoginWithText, nRequestID)
 
-    def ReqUserLoginWithOTP(self, pReqUserLoginWithOTP: "CThostFtdcReqUserLoginWithOTPField", nRequestID: "int") -> "int":
+    def ReqUserLoginWithOTP(self, pReqUserLoginWithOTP, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqUserLoginWithOTP(self, pReqUserLoginWithOTP, nRequestID)
 
-    def ReqOrderInsert(self, pInputOrder: "CThostFtdcInputOrderField", nRequestID: "int") -> "int":
+    def ReqOrderInsert(self, pInputOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqOrderInsert(self, pInputOrder, nRequestID)
 
-    def ReqParkedOrderInsert(self, pParkedOrder: "CThostFtdcParkedOrderField", nRequestID: "int") -> "int":
+    def ReqParkedOrderInsert(self, pParkedOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqParkedOrderInsert(self, pParkedOrder, nRequestID)
 
-    def ReqParkedOrderAction(self, pParkedOrderAction: "CThostFtdcParkedOrderActionField", nRequestID: "int") -> "int":
+    def ReqParkedOrderAction(self, pParkedOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqParkedOrderAction(self, pParkedOrderAction, nRequestID)
 
-    def ReqOrderAction(self, pInputOrderAction: "CThostFtdcInputOrderActionField", nRequestID: "int") -> "int":
+    def ReqOrderAction(self, pInputOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqOrderAction(self, pInputOrderAction, nRequestID)
 
-    def ReqQueryMaxOrderVolume(self, pQueryMaxOrderVolume: "CThostFtdcQueryMaxOrderVolumeField", nRequestID: "int") -> "int":
+    def ReqQueryMaxOrderVolume(self, pQueryMaxOrderVolume, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQueryMaxOrderVolume(self, pQueryMaxOrderVolume, nRequestID)
 
-    def ReqSettlementInfoConfirm(self, pSettlementInfoConfirm: "CThostFtdcSettlementInfoConfirmField", nRequestID: "int") -> "int":
+    def ReqSettlementInfoConfirm(self, pSettlementInfoConfirm, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqSettlementInfoConfirm(self, pSettlementInfoConfirm, nRequestID)
 
-    def ReqRemoveParkedOrder(self, pRemoveParkedOrder: "CThostFtdcRemoveParkedOrderField", nRequestID: "int") -> "int":
+    def ReqRemoveParkedOrder(self, pRemoveParkedOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqRemoveParkedOrder(self, pRemoveParkedOrder, nRequestID)
 
-    def ReqRemoveParkedOrderAction(self, pRemoveParkedOrderAction: "CThostFtdcRemoveParkedOrderActionField", nRequestID: "int") -> "int":
+    def ReqRemoveParkedOrderAction(self, pRemoveParkedOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqRemoveParkedOrderAction(self, pRemoveParkedOrderAction, nRequestID)
 
-    def ReqExecOrderInsert(self, pInputExecOrder: "CThostFtdcInputExecOrderField", nRequestID: "int") -> "int":
+    def ReqExecOrderInsert(self, pInputExecOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqExecOrderInsert(self, pInputExecOrder, nRequestID)
 
-    def ReqExecOrderAction(self, pInputExecOrderAction: "CThostFtdcInputExecOrderActionField", nRequestID: "int") -> "int":
+    def ReqExecOrderAction(self, pInputExecOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqExecOrderAction(self, pInputExecOrderAction, nRequestID)
 
-    def ReqForQuoteInsert(self, pInputForQuote: "CThostFtdcInputForQuoteField", nRequestID: "int") -> "int":
+    def ReqForQuoteInsert(self, pInputForQuote, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqForQuoteInsert(self, pInputForQuote, nRequestID)
 
-    def ReqQuoteInsert(self, pInputQuote: "CThostFtdcInputQuoteField", nRequestID: "int") -> "int":
+    def ReqQuoteInsert(self, pInputQuote, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQuoteInsert(self, pInputQuote, nRequestID)
 
-    def ReqQuoteAction(self, pInputQuoteAction: "CThostFtdcInputQuoteActionField", nRequestID: "int") -> "int":
+    def ReqQuoteAction(self, pInputQuoteAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQuoteAction(self, pInputQuoteAction, nRequestID)
 
-    def ReqBatchOrderAction(self, pInputBatchOrderAction: "CThostFtdcInputBatchOrderActionField", nRequestID: "int") -> "int":
+    def ReqBatchOrderAction(self, pInputBatchOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqBatchOrderAction(self, pInputBatchOrderAction, nRequestID)
 
-    def ReqOptionSelfCloseInsert(self, pInputOptionSelfClose: "CThostFtdcInputOptionSelfCloseField", nRequestID: "int") -> "int":
+    def ReqOptionSelfCloseInsert(self, pInputOptionSelfClose, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqOptionSelfCloseInsert(self, pInputOptionSelfClose, nRequestID)
 
-    def ReqOptionSelfCloseAction(self, pInputOptionSelfCloseAction: "CThostFtdcInputOptionSelfCloseActionField", nRequestID: "int") -> "int":
+    def ReqOptionSelfCloseAction(self, pInputOptionSelfCloseAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqOptionSelfCloseAction(self, pInputOptionSelfCloseAction, nRequestID)
 
-    def ReqCombActionInsert(self, pInputCombAction: "CThostFtdcInputCombActionField", nRequestID: "int") -> "int":
+    def ReqCombActionInsert(self, pInputCombAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqCombActionInsert(self, pInputCombAction, nRequestID)
 
-    def ReqQryOrder(self, pQryOrder: "CThostFtdcQryOrderField", nRequestID: "int") -> "int":
+    def ReqQryOrder(self, pQryOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryOrder(self, pQryOrder, nRequestID)
 
-    def ReqQryTrade(self, pQryTrade: "CThostFtdcQryTradeField", nRequestID: "int") -> "int":
+    def ReqQryTrade(self, pQryTrade, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTrade(self, pQryTrade, nRequestID)
 
-    def ReqQryInvestorPosition(self, pQryInvestorPosition: "CThostFtdcQryInvestorPositionField", nRequestID: "int") -> "int":
+    def ReqQryInvestorPosition(self, pQryInvestorPosition, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestorPosition(self, pQryInvestorPosition, nRequestID)
 
-    def ReqQryTradingAccount(self, pQryTradingAccount: "CThostFtdcQryTradingAccountField", nRequestID: "int") -> "int":
+    def ReqQryTradingAccount(self, pQryTradingAccount, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTradingAccount(self, pQryTradingAccount, nRequestID)
 
-    def ReqQryInvestor(self, pQryInvestor: "CThostFtdcQryInvestorField", nRequestID: "int") -> "int":
+    def ReqQryInvestor(self, pQryInvestor, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestor(self, pQryInvestor, nRequestID)
 
-    def ReqQryTradingCode(self, pQryTradingCode: "CThostFtdcQryTradingCodeField", nRequestID: "int") -> "int":
+    def ReqQryTradingCode(self, pQryTradingCode, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTradingCode(self, pQryTradingCode, nRequestID)
 
-    def ReqQryInstrumentMarginRate(self, pQryInstrumentMarginRate: "CThostFtdcQryInstrumentMarginRateField", nRequestID: "int") -> "int":
+    def ReqQryInstrumentMarginRate(self, pQryInstrumentMarginRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInstrumentMarginRate(self, pQryInstrumentMarginRate, nRequestID)
 
-    def ReqQryInstrumentCommissionRate(self, pQryInstrumentCommissionRate: "CThostFtdcQryInstrumentCommissionRateField", nRequestID: "int") -> "int":
+    def ReqQryInstrumentCommissionRate(self, pQryInstrumentCommissionRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInstrumentCommissionRate(self, pQryInstrumentCommissionRate, nRequestID)
 
-    def ReqQryExchange(self, pQryExchange: "CThostFtdcQryExchangeField", nRequestID: "int") -> "int":
+    def ReqQryExchange(self, pQryExchange, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryExchange(self, pQryExchange, nRequestID)
 
-    def ReqQryProduct(self, pQryProduct: "CThostFtdcQryProductField", nRequestID: "int") -> "int":
+    def ReqQryProduct(self, pQryProduct, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryProduct(self, pQryProduct, nRequestID)
 
-    def ReqQryInstrument(self, pQryInstrument: "CThostFtdcQryInstrumentField", nRequestID: "int") -> "int":
+    def ReqQryInstrument(self, pQryInstrument, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInstrument(self, pQryInstrument, nRequestID)
 
-    def ReqQryDepthMarketData(self, pQryDepthMarketData: "CThostFtdcQryDepthMarketDataField", nRequestID: "int") -> "int":
+    def ReqQryDepthMarketData(self, pQryDepthMarketData, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryDepthMarketData(self, pQryDepthMarketData, nRequestID)
 
-    def ReqQrySettlementInfo(self, pQrySettlementInfo: "CThostFtdcQrySettlementInfoField", nRequestID: "int") -> "int":
+    def ReqQrySettlementInfo(self, pQrySettlementInfo, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySettlementInfo(self, pQrySettlementInfo, nRequestID)
 
-    def ReqQryTransferBank(self, pQryTransferBank: "CThostFtdcQryTransferBankField", nRequestID: "int") -> "int":
+    def ReqQryTransferBank(self, pQryTransferBank, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTransferBank(self, pQryTransferBank, nRequestID)
 
-    def ReqQryInvestorPositionDetail(self, pQryInvestorPositionDetail: "CThostFtdcQryInvestorPositionDetailField", nRequestID: "int") -> "int":
+    def ReqQryInvestorPositionDetail(self, pQryInvestorPositionDetail, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestorPositionDetail(self, pQryInvestorPositionDetail, nRequestID)
 
-    def ReqQryNotice(self, pQryNotice: "CThostFtdcQryNoticeField", nRequestID: "int") -> "int":
+    def ReqQryNotice(self, pQryNotice, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryNotice(self, pQryNotice, nRequestID)
 
-    def ReqQrySettlementInfoConfirm(self, pQrySettlementInfoConfirm: "CThostFtdcQrySettlementInfoConfirmField", nRequestID: "int") -> "int":
+    def ReqQrySettlementInfoConfirm(self, pQrySettlementInfoConfirm, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySettlementInfoConfirm(self, pQrySettlementInfoConfirm, nRequestID)
 
-    def ReqQryInvestorPositionCombineDetail(self, pQryInvestorPositionCombineDetail: "CThostFtdcQryInvestorPositionCombineDetailField", nRequestID: "int") -> "int":
+    def ReqQryInvestorPositionCombineDetail(self, pQryInvestorPositionCombineDetail, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestorPositionCombineDetail(self, pQryInvestorPositionCombineDetail, nRequestID)
 
-    def ReqQryCFMMCTradingAccountKey(self, pQryCFMMCTradingAccountKey: "CThostFtdcQryCFMMCTradingAccountKeyField", nRequestID: "int") -> "int":
+    def ReqQryCFMMCTradingAccountKey(self, pQryCFMMCTradingAccountKey, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryCFMMCTradingAccountKey(self, pQryCFMMCTradingAccountKey, nRequestID)
 
-    def ReqQryEWarrantOffset(self, pQryEWarrantOffset: "CThostFtdcQryEWarrantOffsetField", nRequestID: "int") -> "int":
+    def ReqQryEWarrantOffset(self, pQryEWarrantOffset, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryEWarrantOffset(self, pQryEWarrantOffset, nRequestID)
 
-    def ReqQryInvestorProductGroupMargin(self, pQryInvestorProductGroupMargin: "CThostFtdcQryInvestorProductGroupMarginField", nRequestID: "int") -> "int":
+    def ReqQryInvestorProductGroupMargin(self, pQryInvestorProductGroupMargin, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestorProductGroupMargin(self, pQryInvestorProductGroupMargin, nRequestID)
 
-    def ReqQryExchangeMarginRate(self, pQryExchangeMarginRate: "CThostFtdcQryExchangeMarginRateField", nRequestID: "int") -> "int":
+    def ReqQryExchangeMarginRate(self, pQryExchangeMarginRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryExchangeMarginRate(self, pQryExchangeMarginRate, nRequestID)
 
-    def ReqQryExchangeMarginRateAdjust(self, pQryExchangeMarginRateAdjust: "CThostFtdcQryExchangeMarginRateAdjustField", nRequestID: "int") -> "int":
+    def ReqQryExchangeMarginRateAdjust(self, pQryExchangeMarginRateAdjust, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryExchangeMarginRateAdjust(self, pQryExchangeMarginRateAdjust, nRequestID)
 
-    def ReqQryExchangeRate(self, pQryExchangeRate: "CThostFtdcQryExchangeRateField", nRequestID: "int") -> "int":
+    def ReqQryExchangeRate(self, pQryExchangeRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryExchangeRate(self, pQryExchangeRate, nRequestID)
 
-    def ReqQrySecAgentACIDMap(self, pQrySecAgentACIDMap: "CThostFtdcQrySecAgentACIDMapField", nRequestID: "int") -> "int":
+    def ReqQrySecAgentACIDMap(self, pQrySecAgentACIDMap, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySecAgentACIDMap(self, pQrySecAgentACIDMap, nRequestID)
 
-    def ReqQryProductExchRate(self, pQryProductExchRate: "CThostFtdcQryProductExchRateField", nRequestID: "int") -> "int":
+    def ReqQryProductExchRate(self, pQryProductExchRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryProductExchRate(self, pQryProductExchRate, nRequestID)
 
-    def ReqQryProductGroup(self, pQryProductGroup: "CThostFtdcQryProductGroupField", nRequestID: "int") -> "int":
+    def ReqQryProductGroup(self, pQryProductGroup, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryProductGroup(self, pQryProductGroup, nRequestID)
 
-    def ReqQryMMInstrumentCommissionRate(self, pQryMMInstrumentCommissionRate: "CThostFtdcQryMMInstrumentCommissionRateField", nRequestID: "int") -> "int":
+    def ReqQryMMInstrumentCommissionRate(self, pQryMMInstrumentCommissionRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryMMInstrumentCommissionRate(self, pQryMMInstrumentCommissionRate, nRequestID)
 
-    def ReqQryMMOptionInstrCommRate(self, pQryMMOptionInstrCommRate: "CThostFtdcQryMMOptionInstrCommRateField", nRequestID: "int") -> "int":
+    def ReqQryMMOptionInstrCommRate(self, pQryMMOptionInstrCommRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryMMOptionInstrCommRate(self, pQryMMOptionInstrCommRate, nRequestID)
 
-    def ReqQryInstrumentOrderCommRate(self, pQryInstrumentOrderCommRate: "CThostFtdcQryInstrumentOrderCommRateField", nRequestID: "int") -> "int":
+    def ReqQryInstrumentOrderCommRate(self, pQryInstrumentOrderCommRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInstrumentOrderCommRate(self, pQryInstrumentOrderCommRate, nRequestID)
 
-    def ReqQrySecAgentTradingAccount(self, pQryTradingAccount: "CThostFtdcQryTradingAccountField", nRequestID: "int") -> "int":
+    def ReqQrySecAgentTradingAccount(self, pQryTradingAccount, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySecAgentTradingAccount(self, pQryTradingAccount, nRequestID)
 
-    def ReqQrySecAgentCheckMode(self, pQrySecAgentCheckMode: "CThostFtdcQrySecAgentCheckModeField", nRequestID: "int") -> "int":
+    def ReqQrySecAgentCheckMode(self, pQrySecAgentCheckMode, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySecAgentCheckMode(self, pQrySecAgentCheckMode, nRequestID)
 
-    def ReqQrySecAgentTradeInfo(self, pQrySecAgentTradeInfo: "CThostFtdcQrySecAgentTradeInfoField", nRequestID: "int") -> "int":
+    def ReqQrySecAgentTradeInfo(self, pQrySecAgentTradeInfo, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQrySecAgentTradeInfo(self, pQrySecAgentTradeInfo, nRequestID)
 
-    def ReqQryOptionInstrTradeCost(self, pQryOptionInstrTradeCost: "CThostFtdcQryOptionInstrTradeCostField", nRequestID: "int") -> "int":
+    def ReqQryOptionInstrTradeCost(self, pQryOptionInstrTradeCost, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryOptionInstrTradeCost(self, pQryOptionInstrTradeCost, nRequestID)
 
-    def ReqQryOptionInstrCommRate(self, pQryOptionInstrCommRate: "CThostFtdcQryOptionInstrCommRateField", nRequestID: "int") -> "int":
+    def ReqQryOptionInstrCommRate(self, pQryOptionInstrCommRate, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryOptionInstrCommRate(self, pQryOptionInstrCommRate, nRequestID)
 
-    def ReqQryExecOrder(self, pQryExecOrder: "CThostFtdcQryExecOrderField", nRequestID: "int") -> "int":
+    def ReqQryExecOrder(self, pQryExecOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryExecOrder(self, pQryExecOrder, nRequestID)
 
-    def ReqQryForQuote(self, pQryForQuote: "CThostFtdcQryForQuoteField", nRequestID: "int") -> "int":
+    def ReqQryForQuote(self, pQryForQuote, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryForQuote(self, pQryForQuote, nRequestID)
 
-    def ReqQryQuote(self, pQryQuote: "CThostFtdcQryQuoteField", nRequestID: "int") -> "int":
+    def ReqQryQuote(self, pQryQuote, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryQuote(self, pQryQuote, nRequestID)
 
-    def ReqQryOptionSelfClose(self, pQryOptionSelfClose: "CThostFtdcQryOptionSelfCloseField", nRequestID: "int") -> "int":
+    def ReqQryOptionSelfClose(self, pQryOptionSelfClose, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryOptionSelfClose(self, pQryOptionSelfClose, nRequestID)
 
-    def ReqQryInvestUnit(self, pQryInvestUnit: "CThostFtdcQryInvestUnitField", nRequestID: "int") -> "int":
+    def ReqQryInvestUnit(self, pQryInvestUnit, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryInvestUnit(self, pQryInvestUnit, nRequestID)
 
-    def ReqQryCombInstrumentGuard(self, pQryCombInstrumentGuard: "CThostFtdcQryCombInstrumentGuardField", nRequestID: "int") -> "int":
+    def ReqQryCombInstrumentGuard(self, pQryCombInstrumentGuard, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryCombInstrumentGuard(self, pQryCombInstrumentGuard, nRequestID)
 
-    def ReqQryCombAction(self, pQryCombAction: "CThostFtdcQryCombActionField", nRequestID: "int") -> "int":
+    def ReqQryCombAction(self, pQryCombAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryCombAction(self, pQryCombAction, nRequestID)
 
-    def ReqQryTransferSerial(self, pQryTransferSerial: "CThostFtdcQryTransferSerialField", nRequestID: "int") -> "int":
+    def ReqQryTransferSerial(self, pQryTransferSerial, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTransferSerial(self, pQryTransferSerial, nRequestID)
 
-    def ReqQryAccountregister(self, pQryAccountregister: "CThostFtdcQryAccountregisterField", nRequestID: "int") -> "int":
+    def ReqQryAccountregister(self, pQryAccountregister, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryAccountregister(self, pQryAccountregister, nRequestID)
 
-    def ReqQryContractBank(self, pQryContractBank: "CThostFtdcQryContractBankField", nRequestID: "int") -> "int":
+    def ReqQryContractBank(self, pQryContractBank, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryContractBank(self, pQryContractBank, nRequestID)
 
-    def ReqQryParkedOrder(self, pQryParkedOrder: "CThostFtdcQryParkedOrderField", nRequestID: "int") -> "int":
+    def ReqQryParkedOrder(self, pQryParkedOrder, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryParkedOrder(self, pQryParkedOrder, nRequestID)
 
-    def ReqQryParkedOrderAction(self, pQryParkedOrderAction: "CThostFtdcQryParkedOrderActionField", nRequestID: "int") -> "int":
+    def ReqQryParkedOrderAction(self, pQryParkedOrderAction, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryParkedOrderAction(self, pQryParkedOrderAction, nRequestID)
 
-    def ReqQryTradingNotice(self, pQryTradingNotice: "CThostFtdcQryTradingNoticeField", nRequestID: "int") -> "int":
+    def ReqQryTradingNotice(self, pQryTradingNotice, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryTradingNotice(self, pQryTradingNotice, nRequestID)
 
-    def ReqQryBrokerTradingParams(self, pQryBrokerTradingParams: "CThostFtdcQryBrokerTradingParamsField", nRequestID: "int") -> "int":
+    def ReqQryBrokerTradingParams(self, pQryBrokerTradingParams, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryBrokerTradingParams(self, pQryBrokerTradingParams, nRequestID)
 
-    def ReqQryBrokerTradingAlgos(self, pQryBrokerTradingAlgos: "CThostFtdcQryBrokerTradingAlgosField", nRequestID: "int") -> "int":
+    def ReqQryBrokerTradingAlgos(self, pQryBrokerTradingAlgos, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQryBrokerTradingAlgos(self, pQryBrokerTradingAlgos, nRequestID)
 
-    def ReqQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken: "CThostFtdcQueryCFMMCTradingAccountTokenField", nRequestID: "int") -> "int":
+    def ReqQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQueryCFMMCTradingAccountToken(self, pQueryCFMMCTradingAccountToken, nRequestID)
 
-    def ReqFromBankToFutureByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", nRequestID: "int") -> "int":
+    def ReqFromBankToFutureByFuture(self, pReqTransfer, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqFromBankToFutureByFuture(self, pReqTransfer, nRequestID)
 
-    def ReqFromFutureToBankByFuture(self, pReqTransfer: "CThostFtdcReqTransferField", nRequestID: "int") -> "int":
+    def ReqFromFutureToBankByFuture(self, pReqTransfer, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqFromFutureToBankByFuture(self, pReqTransfer, nRequestID)
 
-    def ReqQueryBankAccountMoneyByFuture(self, pReqQueryAccount: "CThostFtdcReqQueryAccountField", nRequestID: "int") -> "int":
+    def ReqQueryBankAccountMoneyByFuture(self, pReqQueryAccount, nRequestID):
         return _PyCTP.CThostFtdcTraderApi_ReqQueryBankAccountMoneyByFuture(self, pReqQueryAccount, nRequestID)
 
 # Register CThostFtdcTraderApi in _PyCTP:
 _PyCTP.CThostFtdcTraderApi_swigregister(CThostFtdcTraderApi)
 
-def CThostFtdcTraderApi_CreateFtdcTraderApi(*args) -> "CThostFtdcTraderApi *":
+def CThostFtdcTraderApi_CreateFtdcTraderApi(*args):
     return _PyCTP.CThostFtdcTraderApi_CreateFtdcTraderApi(*args)
 
-def CThostFtdcTraderApi_GetApiVersion() -> "char const *":
+def CThostFtdcTraderApi_GetApiVersion():
     return _PyCTP.CThostFtdcTraderApi_GetApiVersion()
 
 
