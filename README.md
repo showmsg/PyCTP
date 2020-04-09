@@ -32,7 +32,9 @@ thosttraderapi_se.lib
 
 ## 通过Swig得到python接口文件
 ~~在刚刚下载得到的API文件夹内，新建文件PyCTP.i，内容如下：~~
+
 请不要使用下面的代码，乱码的问题不好解决
+
 ```c++
 %module(directors="1") PyCTP
  
@@ -103,8 +105,11 @@ thosttraderapi_se.lib
 %include "ThostFtdcTraderApi.h"
 ```
 如果不把GBK转为UTF-8，会出现下面这样的乱码问题：
+
 ![此处输入图片的描述][1]
+
 别看着这个字符串好像只需要解码什么的就可以得到源码，在python下处理这个特殊的字符串还是挺麻烦的，这个和普通的bytes str等的转换不同，所以我们最好使用下面的这版本代码进行封装就可以在C++底层自动把编码转为UTF-8
+
 ![此处输入图片的描述][2]
 
 让CTP的GBK字符在返回的时候自动转化为UTF-8，那么使用下面的代码：
