@@ -237,7 +237,7 @@ http://www.swig.org/Doc4.0/SWIG.html#SWIG
 
     %feature("director") CThostFtdcMdSpi;
 
-声明让C++类CThostFtdcMdSpi开启director功能可以被Python继承。
+声明让C++类CThostFtdcMdSpi开启director功能可以被Python继承。这里为啥不声明Api类是可继承的，我看了下大概是因为，Api类没有继承的必要，因为功能和调用都是提前订好的，且如果声明Api在封装的时候会再多两个警告，且Api类的生成方式有点特殊，不是直接__init__形式生成的，而是有一个类函数来创建，这就导致了如果在这声明继承Api在过后的使用中可能会导致不可预料的问题。
 
     %ignore ...;
 
@@ -245,7 +245,7 @@ http://www.swig.org/Doc4.0/SWIG.html#SWIG
 
     %typemap(out) char[ANY], char[]
 
-从C++类型到Python类型的自定义转换，这里比如对编码进行自定义妆化，对Python list参数进行识别直接使用的typemap函数，和最下面的一个清理内存的typemap函数。
+从C++类型到Python类型的自定义转换，这里比如对编码进行自定义转化，对Python list参数进行识别直接使用的typemap函数，和最下面的一个清理内存的typemap函数。
 
     %include ...;
 
